@@ -20,7 +20,7 @@ working_dir = sys.path[0]+'/'
 os.chdir(working_dir)
 
 #Set up an argument parser
-parser = argparse.ArgumentParser(description='Script for moving output of Orthofinder')
+parser = argparse.ArgumentParser(description='Script for moving files based on a list input')
 
 parser.add_argument('-s', '--source_dir', type=int, metavar='', required=True, help='This should be a full path to the directory where the full pool of proteome files lives')
 parser.add_argument('-l','--list_file', type=int, metavar='', metavar=True, help='This should be a text file containing the name of each file to copy, with each file on a new line')
